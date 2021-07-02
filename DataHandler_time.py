@@ -6,13 +6,13 @@ import scipy.sparse as sp
 from Utils.TimeLogger import log
 
 if args.data == 'yelp':
-	predir = 'D:/Datasets/yelp/%s/' % args.target
+	predir = 'D:/Datasets/yelp/'
 	behs = ['tip', 'neg', 'neutral', 'pos']
 elif args.data == 'ml10m':
-	predir = 'D:/Datasets/MultiInt-ML10M/%s/' % args.target
+	predir = 'D:/Datasets/MultiInt-ML10M/'
 	behs = ['neg', 'neutral', 'pos']
 elif args.data == 'retail':
-	predir = 'D:/Datasets/retail/%s/' % args.target
+	predir = 'D:/Datasets/retail/'
 	behs = ['pv', 'fav', 'cart', 'buy']
 trnfile = predir + 'trn_'
 tstfile = predir + 'tst_'
